@@ -33,7 +33,7 @@ class ViewController: UIViewController,MOLPayLibDelegate{
     }
     
     @IBAction func startButton(sender: AnyObject) {
-        molPayPayment(10.0, orderId: "asdfsdf", billName: "Joe", billEmail: "Email@email.com", billMobile: "028147123897", billDesc: "sdfakjhkasdhfkjhjk", paymentType: "cc")
+        molPayPayment(10.0, orderId: "orderId123", billName: "Joe", billEmail: "Email@email.com", billMobile: "028147123897", billDesc: "Testing Message", paymentType: "cc")
     }
     
     func molPayPayment(payAmount : Float, orderId : NSString, billName : NSString, billEmail : NSString, billMobile : NSString , billDesc : NSString , paymentType : NSString){
