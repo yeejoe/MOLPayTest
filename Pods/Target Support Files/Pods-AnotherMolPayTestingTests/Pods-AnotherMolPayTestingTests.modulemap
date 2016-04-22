@@ -1,0 +1,6 @@
+framework module Pods_AnotherMolPayTestingTests {
+  umbrella header "Pods-AnotherMolPayTestingTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
