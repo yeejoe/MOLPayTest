@@ -15,4 +15,4 @@ target 'AnotherMolPayTestingUITests' do
 
 end
 
-pod ‘MOLPayXDK’,’1.0.2’
+pod ‘MOLPayXDK’,’1.0.3’
