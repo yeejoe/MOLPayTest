@@ -43,20 +43,39 @@ class ViewController: UIViewController,MOLPayLibDelegate{
             channelToPick = paymentType as String
         }
         let paymentRequestDict = [
+//            "mp_amount": NSString(format:"%.2f", payAmount), // Mandatory
+//            "mp_username": "\"\(MOL_USERNAME)\"", // Mandatory
+//            "mp_password": "\"\(MOL_PASSWORD)\"", // Mandatory
+//            "mp_merchant_ID": "\"\(MOL_MERC_ID)\"", // Mandatory
+//            "mp_app_name": "\"\(MOL_APP_NAME)\"", // Mandatory
+//            "mp_order_ID": "\"\(orderId)\"", // Mandatory
+//            "mp_currency": "\"MYR\"", // Mandatory
+//            "mp_country": "\"MY\"", // Mandatory
+//            "mp_verification_key": "\"\(MOL_VER_KEY)\"", // Mandatory
+//            "mp_channel": "\"\(channelToPick)\"", // Optional
+//            "mp_bill_description": "\"\(billDesc)\"", // Optional
+//            "mp_bill_name": "\"\(billName)\"", // Optional
+//            "mp_bill_email": "\"\(billEmail)\"", // Optional
+//            "mp_bill_mobile": "\"\(billMobile)\"", // Optional
+//            "mp_channel_editing": NSNumber(bool:false), // Optional
+//            "mp_editing_enabled": NSNumber(bool:false), // Optional
+//            "mp_transaction_id": "", // Optional for transactionRequest
+//            "mp_request_type": "" // Optional for transactionRequest. Use anything other than "Receipt".
+            
             "mp_amount": NSString(format:"%.2f", payAmount), // Mandatory
-            "mp_username": "\"\(MOL_USERNAME)\"", // Mandatory
-            "mp_password": "\"\(MOL_PASSWORD)\"", // Mandatory
-            "mp_merchant_ID": "\"\(MOL_MERC_ID)\"", // Mandatory
-            "mp_app_name": "\"\(MOL_APP_NAME)\"", // Mandatory
-            "mp_order_ID": "\"\(orderId)\"", // Mandatory
-            "mp_currency": "\"MYR\"", // Mandatory
-            "mp_country": "\"MY\"", // Mandatory
-            "mp_verification_key": "\"\(MOL_VER_KEY)\"", // Mandatory
-            "mp_channel": "\"\(channelToPick)\"", // Optional
-            "mp_bill_description": "\"\(billDesc)\"", // Optional
-            "mp_bill_name": "\"\(billName)\"", // Optional
-            "mp_bill_email": "\"\(billEmail)\"", // Optional
-            "mp_bill_mobile": "\"\(billMobile)\"", // Optional
+            "mp_username": MOL_USERNAME, // Mandatory
+            "mp_password": MOL_PASSWORD, // Mandatory
+            "mp_merchant_ID": MOL_MERC_ID, // Mandatory
+            "mp_app_name": MOL_APP_NAME, // Mandatory
+            "mp_order_ID": orderId, // Mandatory
+            "mp_currency": "MYR", // Mandatory
+            "mp_country": "MY", // Mandatory
+            "mp_verification_key": MOL_VER_KEY, // Mandatory
+            "mp_channel": channelToPick, // Optional
+            "mp_bill_description": billDesc, // Optional
+            "mp_bill_name":billName, // Optional
+            "mp_bill_email": billEmail, // Optional
+            "mp_bill_mobile": billMobile, // Optional
             "mp_channel_editing": NSNumber(bool:false), // Optional
             "mp_editing_enabled": NSNumber(bool:false), // Optional
             "mp_transaction_id": "", // Optional for transactionRequest
